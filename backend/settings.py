@@ -30,6 +30,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 # Application definition
 CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS').split(' ')
+CORS_EXPOSE_HEADERS = ['Permissions-Policy']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
